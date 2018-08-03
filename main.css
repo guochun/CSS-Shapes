@@ -1,0 +1,456 @@
+
+.center {
+
+    margin: 30px auto;
+}
+#Square{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+#Rectangle {
+
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+
+#Circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: red;
+}
+
+#oval {
+
+    width: 200px;
+    height: 100px;
+    border-radius: 50% / 50%;
+    background: red; 
+}
+
+#Triangle-up{
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+
+#Triangle-dowm{
+    height: 0px;
+    width: 0px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}
+#Triangle-left{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid red;
+}
+#Triangle-right{
+    height: 0px;
+    width: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid red;
+}
+
+#yinyang {
+
+    width: 96px;
+    height: 48px;
+    background: #eee;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 2px 50px 2px;
+    border-radius: 50%;
+    position: relative;
+    transform-style: flat;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#yinyang::before{
+
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    background:  #eee;
+    border: 18px solid black;
+    border-radius: 50%;
+
+}
+#yinyang::after{
+
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background:  black;
+    border: 18px solid #eee;
+    border-radius: 50%;
+
+}
+
+#qian {
+
+    width: 0px;
+    height: 0px;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: relative;
+    transform: translate(30px,-60px);
+   
+}
+#qian::before
+{   
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+#qian::after
+{   
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+
+#kun {
+
+    width: 0px;
+    height: 0px;
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    position: relative;
+    transform: translate(30px,150px) rotateZ(180deg);
+}
+
+#kun::before
+{   
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+}
+#kun::after
+{   
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+}
+
+#xun {
+
+    width: 0px;
+    height: 0px;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: relative;
+    transform: translate(120px,-50px) rotateZ(45deg);
+}
+
+#xun::before{
+    
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+#xun::after{
+
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+
+#kan {
+
+    width: 0px;
+    height: 0px;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: relative;
+    transform: translate(150px,30px) rotateZ(90deg);
+}
+#kan::before {
+
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+#kan::after {
+    
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+
+#gen{
+
+    width: 0px;
+    height: 0px;
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: relative;
+    transform: translate(110px,110px) rotateZ(135deg);
+}
+
+#gen::before{
+
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+#gen::after{
+
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+
+}
+
+#zhen{
+
+    width: 0px;
+    height: 0px;
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: relative;
+    transform: translate(-50px,110px) rotateZ(225deg);
+}
+
+#zhen::before{
+
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: 20px;
+    left: -10px;   
+  
+}
+#zhen::after{
+     
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+#li{
+
+    width: 0px;
+    height: 0px;
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: relative;
+    transform: translate(-80px,15px) rotateZ(270deg);
+}
+
+#li::before {
+
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+#li::after {
+
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+#dui{
+    width: 0px;
+    height: 0px;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: relative;
+    transform: translate(-70px,-80px) rotateZ(315deg);
+}
+
+#dui::before{
+
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: block;
+    border: 0px solid black;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    border-top-width: 3px;
+    border-bottom-width: 3px; 
+    position: absolute;
+    top: 15px;
+    left: -15px;
+}
+#dui::after {
+
+    content: "";
+    width: 10px;
+    height:6px;
+    background: white;
+    display: block;
+    border: 0px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
